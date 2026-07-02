@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  color: #1C0A00;
+  background-color: #FDFAF4;
+}
+
+* { box-sizing: border-box; }
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Gold divider utility */
+.gold-divider {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, #8B6A14, #C9A030);
+  border-radius: 2px;
+}
+
+/* Luxury button base */
+.btn-gold {
+  background: linear-gradient(135deg, #8B6A14, #C9A030);
+  color: #FAF6EE;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(139, 106, 20, 0.3);
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #6E5010, #B89020);
+  box-shadow: 0 6px 20px rgba(139, 106, 20, 0.45);
+  transform: translateY(-1px);
+}
+
+/* Hide scrollbar for thumbnail strips */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
