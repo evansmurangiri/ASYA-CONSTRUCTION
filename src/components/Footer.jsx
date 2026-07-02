@@ -133,7 +133,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 shrink-0 text-brand-500" />
-                <span className="text-[13px] text-coffee-300">+254 700 000 000</span>
+                <span className="text-[13px] text-coffee-300">+254 736681362</span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 shrink-0 text-brand-500" />
@@ -148,7 +148,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-coffee-800 pt-6 text-center text-[12.5px] text-coffee-500">
-          © {new Date().getFullYear()} Asya Build Construction. All rights reserved.
+          © {new Date().getFullYear()} Asya Consult Construction. All rights reserved.
         </div>
       </div>
     </footer>

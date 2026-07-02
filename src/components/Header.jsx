@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Building2, Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -26,15 +27,12 @@ export default function Header() {
         <div className="flex h-[76px] items-center justify-between">
 
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2.5 shrink-0">
-            <div className="flex h-9 w-9 items-center justify-center rounded-md bg-brand-600">
-              <Building2 className="h-5 w-5 text-brand-50" strokeWidth={2} />
-            </div>
-            <div className="leading-tight">
-              <span className="block font-serif text-[20px] font-bold text-coffee-900 tracking-tight">
-                Asya <span className="text-brand-600">Build</span>
-              </span>
-            </div>
+          <Link to="/" className="flex items-center shrink-0 ml-4 lg:ml-8">
+            <img
+              src={logo}
+              alt="Asya Build logo"
+              className="h-14 w-auto object-contain rounded-lg"
+            />
           </Link>
 
           {/* Desktop nav */}
